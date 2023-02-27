@@ -8,10 +8,10 @@ async function listContacts() {
   try {
     const rawData = await fs.readFile(contactsPath, "utf-8");
     return JSON.parse(rawData);
-  } catch {
-    (error) => console.log(error.message);
+  } catch 
+    (error) { console.log(error.message) };
   }
-}
+
 
 async function getContactById(id) {
   try {
